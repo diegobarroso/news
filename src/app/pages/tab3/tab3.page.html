@@ -1,0 +1,22 @@
+<ion-header [translucent]="true" mode="ios" class="ion-no-border">
+  <ion-toolbar>
+    <ion-title>
+      Favorites
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense" mode="ios" class="ion-no-border">
+    <ion-toolbar>
+      <ion-title size="large">Favorites</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <app-articles [articles]="articles"></app-articles>
+
+  <div class="ion-text-center" *ngIf="articles.length === 0">
+    <h2>No article in favorites</h2>
+  </div>
+  
+</ion-content>
